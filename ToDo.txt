@@ -1,7 +1,10 @@
 Crear una API con el resultado de los scrapper
 -Ya se creo el API con el resultado de los scrapper, se esperara a terminar el proyecto para subir el API a la nube
---Al momento de subir la API a la nube, se debe de crear un github actions para que cada hora 00:00 se automatize los webscrappers se generen los JSON y se suban a la nube
---Verificar si los webscrappers se ejecutan correctamente en el github actions
+--Crear un github actions para automatizar los webscrappers
+--Agregar al github actions para automatizar la limpieza de los JSON
+--Agregar al github actions para unificar los JSON
+--Agregar al github actions para borrar los JSON de la nube
+--Agregar al github actions para automatizar la subida de los nuevos JSON a la nube a las 00:00
 
 
 Realizar un apartado para ropa de mujeres
@@ -9,7 +12,7 @@ Realizar un apartado para ropa de mujeres
 --En el front-end agregar un boton para cambiar de ropa de hombres a mujeres
 
 Realizar un apartado para otras prendas, como accesorios, pantalones
---Realizar otro modelo de webScrapping para accesorios, subirlos a la nube
+--Realizar otro modelo de webScrapping para accesorios, subirlos a la nube y organizar bien el API
 --Agregar apartado en el front-end para accesorios
 
 Mejorar el metodo de webScrapping de Pull&Bear.py y H&M.py
@@ -22,14 +25,25 @@ Mejorar la interfaz de la pagina
 
 Comenzar el back-End
 
-Realizar el modelo de machine learning con los siguientes pasos
+-Realizar el esquema de la base de datos
+--Realizar el login
+--Realizar el registro
+--Realizar el defaultMode de los 404 y el 500
+--Realizar la funcion de guardar las camisas del usuario en la base de datos (Azure blob storage)
+--Realizar la funcion de ver las camisas del usuario en profile.html
+--Realizar la funcion de borrar las camisas del usuario en profile.html (Realizar boton de borrar)
+--Realizar la integracion del modelo machine learning con la pagina
+--Realizar la integracion del modelo machine learning con Dataset de las camisas del usuario
+--Mostrar el resultado del modelo machine learning en la pagina
+--Realizar el mapeo de las URL
 
+
+Realizar el modelo de machine learning con los siguientes pasos
 - Recopilacion de las camisas del usuario ( estilo,color,patron)
 - Preprocesamiento de los datos (limpieza, normalizacion, codificacion)
 - Creacion del modelo de machine learning
 Clasificación de Imágenes: Utiliza un modelo preentrenado como ResNet o InceptionV3 para clasificar las imágenes de camisas.
 Modelo de Recomendación: Usa un Autoencoder o un modelo de Matrix Factorization para capturar las preferencias del usuario y generar recomendaciones.
-
 - Entrenamiento del modelo
 - Evaluacion del modelo
 

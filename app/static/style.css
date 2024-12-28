@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=SF+Cartoonist+Hand&display=swap');
+
+
+/* Estilos generales */
+body {
+    font-family: 'SF Cartoonist Hand', cursive;
+    background-color: #fff4e6; /* Fondo cálido suave */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    width: 300px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Formulario */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 5px;
+    color: #666;
+}
+
+input {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+button {
+    background-color: #f2711c; /* Naranja pastel */
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+/* Botones sociales */
+.social-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.social-button {
+    text-decoration: none;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Centra el ícono dentro del botón */
+}
+
+.gmail .fab {
+    color: #DB4437; /* Rojo Gmail */
+}
+
+.hotmail .fab {
+    color: #0078D4; /* Azul Hotmail */
+}

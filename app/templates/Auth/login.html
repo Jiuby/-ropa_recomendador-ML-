@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=SF+Cartoonist+Hand&display=swap');
+
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #FFE5E5;
+            font-family: 'SF Cartoonist Hand', sans-serif;
+        }
+
+        .login-container {
+            background-color: #FFF;
+            padding: 2rem;
+            border-radius: 20px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            width: 320px;
+        }
+
+        h2 {
+            color: #FF9494;
+            text-align: center;
+            margin-bottom: 2rem;
+            font-size: 2em;
+            font-family: 'SF Cartoonist Hand', cursive;
+        }
+
+        .input-group {
+            margin-bottom: 1.5rem;
+        }
+
+        input {
+            width: 100%;
+            padding: 12px;
+            border: 2px solid #FFB4B4;
+            border-radius: 10px;
+            font-size: 1em;
+            font-family: 'SF Cartoonist Hand', sans-serif;
+            transition: border-color 0.3s;
+            box-sizing: border-box;
+        }
+
+        input:focus {
+            outline: none;
+            border-color: #FF9494;
+        }
+
+        .login-btn {
+            width: 100%;
+            padding: 12px;
+            background-color: #FF9494;
+            border: none;
+            border-radius: 10px;
+            color: white;
+            font-size: 1.1em;
+            cursor: pointer;
+            font-family: 'SF Cartoonist Hand', sans-serif;
+            transition: background-color 0.3s;
+        }
+
+        .login-btn:hover {
+            background-color: #FF7676;
+        }
+
+        .separator {
+            margin: 1.5rem 0;
+            text-align: center;
+            position: relative;
+        }
+
+        .separator::before,
+        .separator::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            width: 45%;
+            height: 1px;
+            background-color: #FFB4B4;
+        }
+
+        .separator::before {
+            left: 0;
+        }
+
+        .separator::after {
+            right: 0;
+        }
+
+        .separator span {
+            background-color: #FFF;
+            padding: 0 10px;
+            color: #FF9494;
+            font-size: 0.9em;
+        }
+
+        .social-buttons {
+            display: flex;
+            justify-content: space-between;
+            gap: 1rem;
+        }
+
+        .gmail-btn,
+        .hotmail-btn {
+            flex: 1;
+            padding: 10px;
+            border: 2px solid #FFB4B4;
+            border-radius: 10px;
+            background-color: white;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            font-size: 1.5em;
+        }
+
+        .gmail-btn:hover,
+        .hotmail-btn:hover {
+            background-color: #FFF0F0;
+        }
+
+        .gmail-btn i {
+            color: #DB4437;
+        }
+
+        .hotmail-btn i {
+            color: #0078D4;
+        }
+
+        .create-account {
+            text-align: center;
+            margin-top: 1.5rem;
+        }
+
+        .create-account a {
+            color: #FF9494;
+            text-decoration: none;
+            font-size: 0.9em;
+        }
+
+        .create-account a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <form>
+            <h2>Iniciar Sesión</h2>
+
+            <div class="input-group">
+                <input type="email" id="email" placeholder="Correo electrónico" required>
+            </div>
+
+            <div class="input-group">
+                <input type="password" id="password" placeholder="Contraseña" required>
+            </div>
+
+            <button type="submit" class="login-btn">Ingresar</button>
+
+            <div class="separator">
+                <span>o continúa con</span>
+            </div>
+
+            <div class="social-buttons">
+                <button type="button" class="gmail-btn">
+                    <i class="fa-brands fa-google"></i>
+                </button>
+                <button type="button" class="hotmail-btn">
+                    <i class="fa-brands fa-microsoft"></i>
+                </button>
+            </div>
+
+            <div class="create-account">
+                <a href="/app/templates/Auth/registro.html">Crear cuenta</a>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

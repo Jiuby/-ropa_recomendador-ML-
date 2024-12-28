@@ -1,0 +1,35 @@
+Crear una API con el resultado de los scrapper
+-Ya se creo el API con el resultado de los scrapper, se esperara a terminar el proyecto para subir el API a la nube
+--Al momento de subir la API a la nube, se debe de crear un github actions para que cada hora 00:00 se automatize los webscrappers se generen los JSON y se suban a la nube
+--Verificar si los webscrappers se ejecutan correctamente en el github actions
+
+
+Realizar un apartado para ropa de mujeres
+--Simplemente agregar el link de la pagina de mujeres en el WebScrapping
+--En el front-end agregar un boton para cambiar de ropa de hombres a mujeres
+
+Realizar un apartado para otras prendas, como accesorios, pantalones
+--Realizar otro modelo de webScrapping para accesorios, subirlos a la nube
+--Agregar apartado en el front-end para accesorios
+
+Mejorar el metodo de webScrapping de Pull&Bear.py y H&M.py
+
+Realizar el WebScrapping de Bershka
+
+Ver que mas paginas de ropa colocar
+
+Mejorar la interfaz de la pagina
+
+Comenzar el back-End
+
+Realizar el modelo de machine learning con los siguientes pasos
+
+- Recopilacion de las camisas del usuario ( estilo,color,patron)
+- Preprocesamiento de los datos (limpieza, normalizacion, codificacion)
+- Creacion del modelo de machine learning
+Clasificación de Imágenes: Utiliza un modelo preentrenado como ResNet o InceptionV3 para clasificar las imágenes de camisas.
+Modelo de Recomendación: Usa un Autoencoder o un modelo de Matrix Factorization para capturar las preferencias del usuario y generar recomendaciones.
+
+- Entrenamiento del modelo
+- Evaluacion del modelo
+

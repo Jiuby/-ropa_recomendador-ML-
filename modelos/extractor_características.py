@@ -1,0 +1,1 @@
+# Modelo para analizar características de las camisas

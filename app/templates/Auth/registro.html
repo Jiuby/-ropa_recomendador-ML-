@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=SF+Cartoonist+Hand&display=swap');
+
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #FFE5E5;
+            font-family: 'SF Cartoonist Hand', sans-serif;
+        }
+
+        .register-container {
+            background-color: #FFF;
+            padding: 2rem;
+            border-radius: 20px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            width: 320px;
+        }
+
+        h2 {
+            color: #FF9494;
+            text-align: center;
+            margin-bottom: 2rem;
+            font-size: 2em;
+            font-family: 'SF Cartoonist Hand', cursive;
+        }
+
+        .input-group {
+            margin-bottom: 1.5rem;
+        }
+
+        input {
+            width: 100%;
+            padding: 12px;
+            border: 2px solid #FFB4B4;
+            border-radius: 10px;
+            font-size: 1em;
+            font-family: 'SF Cartoonist Hand', sans-serif;
+            transition: border-color 0.3s;
+            box-sizing: border-box;
+        }
+
+        input:focus {
+            outline: none;
+            border-color: #FF9494;
+        }
+
+        .register-btn {
+            width: 100%;
+            padding: 12px;
+            background-color: #FF9494;
+            border: none;
+            border-radius: 10px;
+            color: white;
+            font-size: 1.1em;
+            cursor: pointer;
+            font-family: 'SF Cartoonist Hand', sans-serif;
+            transition: background-color 0.3s;
+        }
+
+        .register-btn:hover {
+            background-color: #FF7676;
+        }
+
+        .back-btn {
+            width: 100%;
+            padding: 12px;
+            background-color: #FFB4B4;
+            border: none;
+            border-radius: 10px;
+            color: white;
+            font-size: 1.1em;
+            cursor: pointer;
+            font-family: 'SF Cartoonist Hand', sans-serif;
+            transition: background-color 0.3s;
+            margin-top: 1rem;
+        }
+
+        .back-btn:hover {
+            background-color: #FF9494;
+        }
+
+                .create-account {
+            text-align: center;
+            margin-top: 1.5rem;
+        }
+
+        .create-account a {
+            color: #FF9494;
+            text-decoration: none;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+    <div class="register-container">
+        <form>
+            <h2>Registro</h2>
+
+            <div class="input-group">
+                <input type="email" id="email" placeholder="Correo electrónico" required>
+            </div>
+
+            <div class="input-group">
+                <input type="password" id="password" placeholder="Contraseña" required>
+            </div>
+
+            <div class="input-group">
+                <input type="password" id="confirm-password" placeholder="Confirmar contraseña" required>
+            </div>
+
+            <button type="submit" class="register-btn">Registrar</button>
+            <div class="create-account">
+                <a href="/app/templates/Auth/login.html">Crear cuenta</a>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

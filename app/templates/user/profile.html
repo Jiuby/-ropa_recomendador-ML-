@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=SF+Cartoonist+Hand&display=swap');
+
+        body {
+            font-family: 'SF Cartoonist Hand', sans-serif;
+            background-color: #FFE5E5;
+        }
+
+        .profile-container {
+            background-color: #FFF;
+            padding: 2rem;
+            border-radius: 20px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            max-width: 400px;
+            margin: auto;
+        }
+
+        h2 {
+            color: #FF9494;
+            margin-bottom: 1rem;
+            font-size: 2em;
+            font-family: 'SF Cartoonist Hand', cursive;
+        }
+
+        .user-email {
+            color: #666;
+            margin-bottom: 1.5rem;
+            font-size: 1em;
+        }
+
+        .user-photo {
+            width: 100px;
+            height: 100px;
+            border: 2px solid #FFB4B4;
+            border-radius: 50%;
+            background-color: #FFF;
+            margin: 0 auto 1.5rem;
+        }
+
+        .shirts-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            justify-content: center;
+        }
+
+        .shirt {
+            width: 80px;
+            height: 80px;
+            border: 2px solid #FFB4B4;
+            border-radius: 10px;
+            background-color: #FFF;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #FF9494;">
+        <a class="navbar-brand text-white" href="/">Inicio</a>
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="/app/templates/ml_analysis/ml_analysis_results.html">Resultados estudios</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="/app/templates/ml_analysis/start_ml_analysis.html">Comenzar estudios</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="/app/templates/user/profile.html">Ver perfil de usuario</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="/app/templates/user/upload_shirt.html">Subir camisas</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container d-flex justify-content-center align-items-center min-vh-100">
+        <div class="profile-container">
+            <h2>Bienvenido</h2>
+            <div class="user-email">usuario@correo.com</div>
+            <div class="user-photo"></div>
+            <div class="shirts-container">
+                <div class="shirt"></div>
+                <div class="shirt"></div>
+                <div class="shirt"></div>
+                <div class="shirt"></div>
+                <div class="shirt"></div>
+                <div class="shirt"></div>
+                <div class="shirt"></div>
+                <div class="shirt"></div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

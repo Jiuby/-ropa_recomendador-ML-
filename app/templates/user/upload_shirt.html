@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subir Camisas</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=SF+Cartoonist+Hand&display=swap');
+
+        body {
+            font-family: 'SF Cartoonist Hand', sans-serif;
+            background-color: #FFE5E5;
+        }
+
+        .upload-container {
+            background-color: #FFF;
+            padding: 2rem;
+            border-radius: 20px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            max-width: 400px;
+            margin: auto;
+        }
+
+        h2 {
+            color: #FF9494;
+            margin-bottom: 1rem;
+            font-size: 2em;
+            font-family: 'SF Cartoonist Hand', cursive;
+        }
+
+        .input-group {
+            margin-bottom: 1.5rem;
+        }
+
+        input[type="file"] {
+            width: 100%;
+            padding: 12px;
+            border: 2px solid #FFB4B4;
+            border-radius: 10px;
+            font-size: 1em;
+            font-family: 'SF Cartoonist Hand', sans-serif;
+            transition: border-color 0.3s;
+            box-sizing: border-box;
+        }
+
+        input[type="file"]:focus {
+            outline: none;
+            border-color: #FF9494;
+        }
+
+        .upload-btn {
+            width: 100%;
+            padding: 12px;
+            background-color: #FF9494;
+            border: none;
+            border-radius: 10px;
+            color: white;
+            font-size: 1.1em;
+            cursor: pointer;
+            font-family: 'SF Cartoonist Hand', sans-serif;
+            transition: background-color 0.3s;
+        }
+
+        .upload-btn:hover {
+            background-color: #FF7676;
+        }
+
+        .back-btn {
+            width: 100%;
+            padding: 12px;
+            background-color: #FFB4B4;
+            border: none;
+            border-radius: 10px;
+            color: white;
+            font-size: 1.1em;
+            cursor: pointer;
+            font-family: 'SF Cartoonist Hand', sans-serif;
+            transition: background-color 0.3s;
+            margin-top: 1rem;
+        }
+
+        .back-btn:hover {
+            background-color: #FF9494;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #FF9494;">
+        <a class="navbar-brand text-white" href="/">Inicio</a>
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="/app/templates/ml_analysis/ml_analysis_results.html">Resultados estudios</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="/app/templates/ml_analysis/start_ml_analysis.html">Comenzar estudios</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="/app/templates/user/profile.html">Ver perfil de usuario</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="/app/templates/user/upload_shirt.html">Subir camisas</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container d-flex justify-content-center align-items-center min-vh-100">
+        <div class="upload-container">
+            <h2>Subir Camisas</h2>
+            <form>
+                <div class="input-group">
+                    <input type="file" id="shirt-photo" accept="image/*" multiple required>
+                </div>
+                <button type="submit" class="upload-btn">Subir</button>
+                <button type="button" class="back-btn" onclick="window.location.href='/'">Volver</button>
+            </form>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
